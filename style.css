@@ -25,6 +25,8 @@ nav {
   background: var(--always-white);
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 nav .column-left {
   display: flex;
@@ -80,7 +82,7 @@ nav .column-center .tab .bar {
   border-bottom: 3px solid var(--primary-button-background);
 }
 
-.column-right {
+nav .column-right {
   /* width: 318px; */
   /* background: chartreuse; */
   display: flex;
@@ -149,4 +151,38 @@ nav .column-center .tab .bar {
   display: inline-block;
   height: 20px;
   width: 20px;
+}
+
+/* Content */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  column-gap: 32px;
+}
+.content-grid .column-left {
+  background: pink;
+}
+.content-grid .column-left .fixed-area {
+  background: green;
+  position: fixed;
+  top: var(--header-height);
+}
+.content-grid .column-center {
+  background: pink;
+  padding-top: var(--header-height);
+}
+.content-grid .column-center .card-area {
+  background: green;
+  width: 680px;
+  margin: 0 auto;
+  height: 3000px;
+}
+.content-grid .column-right {
+  background: pink;
+}
+.content-grid .column-right .fixed-area {
+  background: green;
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
 }
