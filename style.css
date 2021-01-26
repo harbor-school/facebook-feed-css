@@ -3,11 +3,49 @@
 
 body {
   margin: 0;
+  background: var(--web-wash);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, ".SFNSText-Regular",
+    sans-serif;
 }
-.header {
-  background: var(--base-blue);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+
+/* svg,
+img {
+  display: block;
+} */
+
+/* Navigation */
+nav {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  background: var(--always-white);
+  display: flex;
+  align-items: center;
 }
-svg {
-  color: #385898;
+nav .fb-logo {
+  margin-left: 16px;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+nav .search {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  margin-left: 10px;
+  background: var(--comment-background);
+  width: 240px;
+  padding-left: 12px;
+}
+.search-icon {
+  width: 16px;
+  height: 16px;
+  background-position: 0 -828px;
+  background-image: url("./images/icons2.png");
+  background-size: 25px 1070px;
+}
+nav input {
+  all: unset;
+  font-size: 15px;
+  font-weight: 400;
+  height: 40px;
+  margin-left: 8px;
 }
