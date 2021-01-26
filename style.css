@@ -49,7 +49,7 @@ nav .search {
   width: 16px;
   height: 16px;
   background-position: 0 -828px;
-  background-image: url("./images/icons2.png");
+  background-image: url("./images/icons.png");
   background-size: 25px 1070px;
 }
 nav input {
@@ -79,11 +79,74 @@ nav .column-center .tab .bar {
   bottom: 0;
   border-bottom: 3px solid var(--primary-button-background);
 }
-nav .column-center .tab.active {
-  /* border-bottom: 5px solid tomato; */
-}
 
 .column-right {
-  width: 318px;
-  background: chartreuse;
+  /* width: 318px; */
+  /* background: chartreuse; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 16px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+}
+.profile img {
+  width: 26px;
+  height: 26px;
+  border-radius: 1000px;
+  border: 1px solid var(--secondary-button-background);
+  margin-right: 6px;
+}
+.profile span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.action-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: var(--secondary-button-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+}
+.plus-icon {
+  background-position: 0 -570px;
+  background-image: url("./images/icons.png");
+  background-size: 25px 1070px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.message-icon {
+  background-position: 0 -570px;
+  background-image: url("./images/icons.png");
+  background-size: 25px 1070px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.notification-icon {
+  background-position: 0 -570px;
+  background-image: url("./images/icons.png");
+  background-size: 25px 1070px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.dropdown-icon {
+  background-position: 0 -96px;
+  background-image: url("./images/icons2.png");
+  background-size: 33px 236px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
 }
