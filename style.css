@@ -312,7 +312,7 @@ nav .column-right {
   background: pink;
   padding-top: var(--header-height);
 }
-.content-grid .column-center .card-area {
+.content-grid .column-center .content-area {
   background: green;
   width: 680px;
   margin: 0 auto;
