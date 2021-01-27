@@ -1,11 +1,17 @@
 @import url("./reset.css");
-@import url("./color-tokens.css");
+@import url("./system-tokens.css");
 
 /* Common */
 body {
   background: var(--web-wash);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, ".SFNSText-Regular",
-    sans-serif;
+  font-family: var(--font-family-apple);
+  text-decoration-thickness: auto;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  font-family: var(--font-family-apple);
+  text-decoration-thickness: auto;
+  -webkit-font-smoothing: antialiased;
 }
 /* svg,
 img {
@@ -16,6 +22,42 @@ img {
 }
 .fill-secondary-icon {
   fill: var(--secondary-icon);
+}
+.plus-icon {
+  background-position: 0 -570px;
+  background-image: url("./images/icons.png");
+  background-size: 25px 1070px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.message-icon {
+  background-position: 0 -570px;
+  background-image: url("./images/icons.png");
+  background-size: 25px 1070px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.notification-icon {
+  background-position: 0 -570px;
+  background-image: url("./images/icons.png");
+  background-size: 25px 1070px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.dropdown-icon {
+  background-position: 0 -96px;
+  background-image: url("./images/icons2.png");
+  background-size: 33px 236px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
 }
 .search-icon {
   width: 16px;
@@ -48,6 +90,15 @@ img {
   display: inline-block;
   background-position: 0 -50px;
 }
+.create-room-icon {
+  height: 24px;
+  width: 24px;
+  background-image: url("./images/icons3.png");
+  background-size: 25px 265px;
+  display: inline-block;
+  background-position: 0 0;
+  margin-right: 8px;
+}
 @media only screen and (max-width: 1379px) {
   .desktop-only {
     display: none;
@@ -66,6 +117,7 @@ img {
   border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
   box-shadow: 0 1px 2px var(--shadow-2);
   background: var(--surface-background);
+  margin-bottom: 16px;
 }
 
 /* Navigation */
@@ -168,42 +220,6 @@ nav .column-right {
   align-items: center;
   margin-left: 8px;
 }
-.plus-icon {
-  background-position: 0 -570px;
-  background-image: url("./images/icons.png");
-  background-size: 25px 1070px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-}
-.message-icon {
-  background-position: 0 -570px;
-  background-image: url("./images/icons.png");
-  background-size: 25px 1070px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-}
-.notification-icon {
-  background-position: 0 -570px;
-  background-image: url("./images/icons.png");
-  background-size: 25px 1070px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-}
-.dropdown-icon {
-  background-position: 0 -96px;
-  background-image: url("./images/icons2.png");
-  background-size: 33px 236px;
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-}
 
 /* Content */
 .content-grid {
@@ -274,4 +290,53 @@ nav .column-right {
 }
 .new-post-types .post-type i {
   margin-right: 8px;
+}
+
+.create-room {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  height: 64px;
+}
+.create-room-button {
+  /* all: unset; */
+  background: unset;
+  outline: unset;
+  height: 40px;
+  padding: 0 12px;
+  border: 2px solid var(--primary-deemphasized-button-background);
+  border-radius: 1000px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue-link);
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  white-space: nowrap;
+}
+.create-room-friends {
+  display: flex;
+}
+.create-room-friends img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--media-inner-border);
+  border-radius: 1000px;
+  margin-right: 16px;
+}
+.action-button-2 {
+  width: 48px;
+  /* add flex properties cause parent div is flex that calculate children's size automatically */
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 48px;
+  background: var(--popover-background);
+  position: sticky;
+  right: 0;
+  border-radius: 1000px;
+  box-shadow: 0 2px 8px var(--shadow-1), 0 0 0 1px var(--shadow-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
 }
