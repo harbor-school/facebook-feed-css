@@ -83,10 +83,14 @@ nav input {
 nav .column-center {
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
 }
 nav .tab {
-  width: 129.6px;
-  /* 1379px - max-width: 111.6px; */
+  max-width: 129.6px;
+  width: 10vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -101,7 +105,6 @@ nav .column-center .tab .bar {
 }
 
 nav .column-right {
-  /* width: 318px; */
   /* background: chartreuse; */
   display: flex;
   justify-content: flex-end;
