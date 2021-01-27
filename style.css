@@ -3,7 +3,6 @@
 
 /* Common */
 body {
-  margin: 0;
   background: var(--web-wash);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, ".SFNSText-Regular",
     sans-serif;
@@ -17,6 +16,19 @@ img {
 }
 .fill-secondary-icon {
   fill: var(--secondary-icon);
+}
+@media only screen and (max-width: 1379px) {
+  .desktop-only {
+    display: none;
+  }
+}
+.mobile-only {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .mobile-only {
+    display: initial;
+  }
 }
 
 /* Navigation */
@@ -46,6 +58,12 @@ nav .search {
   background: var(--comment-background);
   width: 240px;
   padding-left: 12px;
+}
+@media only screen and (max-width: 1379px) {
+  nav .search {
+    width: 40px;
+    height: 40px;
+  }
 }
 .search-icon {
   width: 16px;
