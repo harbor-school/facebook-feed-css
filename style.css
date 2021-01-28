@@ -204,7 +204,8 @@ img {
   width: 36px;
   background-position: 0 0;
   background-size: 37px 184px;
-  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 .contact-live-video-icon {
   background-image: url("./images/icons3.png");
