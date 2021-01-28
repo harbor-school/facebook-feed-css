@@ -7,6 +7,11 @@
   padding-bottom: 24px;
   position: relative;
 }
+@media only screen and (max-width: 1300px) {
+  .stories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .more-stories-button {
   background: var(--popover-background);
   box-shadow: 0 0 0 1px var(--shadow-1);
