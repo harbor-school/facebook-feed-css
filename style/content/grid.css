@@ -8,6 +8,11 @@
     grid-template-columns: 1fr minmax(0, 2fr) 1fr;
   }
 }
+@media only screen and (max-width: 1080px) {
+  .content-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 .content-grid .column-center {
   /* background: pink; */
   padding-top: var(--header-height);

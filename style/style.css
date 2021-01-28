@@ -42,14 +42,20 @@ img {
     display: none;
   }
 }
-.mobile-only {
+@media only screen and (max-width: 1080px) {
+  .desktop-tablet-only {
+    display: none;
+    background: blue;
+  }
+}
+/* .mobile-only {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .mobile-only {
     display: initial;
   }
-}
+} */
 
 /* New Post Button */
 .new-post-button {
