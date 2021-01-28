@@ -1,6 +1,7 @@
 /* create-room */
 .create-room {
   display: flex;
+  overflow-y: hidden;
   overflow-x: scroll;
   position: relative;
   height: 64px;
