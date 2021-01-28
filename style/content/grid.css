@@ -1,6 +1,6 @@
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr minmax(0, 3fr) 1fr;
   column-gap: 32px;
 }
 .content-grid .column-center {
@@ -9,7 +9,7 @@
 }
 .content-grid .column-center .content-area {
   /* background: green; */
-  width: 680px;
+  max-width: 680px;
   margin: 0 auto;
   height: 3000px;
   margin-top: 16px;
