@@ -1,6 +1,8 @@
 /* create-room */
 .create-room {
   display: flex;
+  /* direction must be "row" for child's sticky scroll */
+  flex-direction: row;
   overflow-y: hidden;
   overflow-x: scroll;
   position: relative;
